@@ -23,7 +23,6 @@ class Song
     art_obj = Artist.find_or_create_by_name(name)
     self.artist = art_obj
     artist.add_song(self)
-
   end
 
 end # => End Song Class
