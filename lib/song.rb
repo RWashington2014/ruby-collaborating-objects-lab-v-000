@@ -10,10 +10,10 @@ class Song
 
   def self.new_by_filename(filename)
     song_arr = filename.split(" - ")
-
     song = self.new("#{song_arr[1]}")
-    #art_obj = Artist.find_or_create_by_name("#{song_arr[0]}")
     song.artist_name = "#{song_arr[0]}"
+
+    #art_obj = Artist.find_or_create_by_name("#{song_arr[0]}")
     #song.artist = art_obj
     #art_obj.songs << song
     song
